@@ -37,28 +37,28 @@ const Navigation = () => {
             Animesh Anand
           </div>
           
-          <div className="hidden md:flex items-center space-x-8 ml-12">
+          <div className="hidden md:flex items-center space-x-36 ml-12">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground text-2xl hover:text-primary transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground text-2xl hover:text-primary transition-colors"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground text-2xl hover:text-primary transition-colors"
             >
               Projects
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground text-2xl hover:text-primary transition-colors"
             >
               Contact
             </button>
@@ -66,7 +66,7 @@ const Navigation = () => {
               href="https://drive.google.com/file/d/1yuPR2f-IBya93gKcfu9FRiUlSSABcxl-/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors"
+              className="flex text-2xl items-center space-x-2 text-foreground hover:text-primary transition-colors"
             >
               <Download size={16} />
               <span>Resume</span>

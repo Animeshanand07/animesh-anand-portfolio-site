@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 animate-float">
                 <img 
-                  src="/lovable-uploads/bf67c1f6-886e-495f-91c0-969a36eac84b.png"
+                  src="/my_2.jpg"
                   alt="Animesh Anand"
                   className="w-full h-full object-cover"
                 />
