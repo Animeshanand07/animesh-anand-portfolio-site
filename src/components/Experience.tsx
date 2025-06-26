@@ -11,26 +11,32 @@ const Experience = () => {
       icon: "🎬"
     },
     {
-      title: "Secretary & Coordinator – Alpha Productions",
-      period: "2023–2024",
+      title: "Secretary – Alpha Productions",
+      period: "2025–Present",
       description: "Leading production teams and managing creative projects",
       icon: "🎭"
     },
     {
-      title: "Media Head – Aarohan & Zeitgeist",
-      period: "2023–2024",
-      description: "Overseeing media strategy for major college events",
-      icon: "📺"
-    },
-    {
       title: "Event Head – Advitiya",
-      period: "2023",
+      period: "2025",
       description: "Organizing and executing large-scale events",
       icon: "🎪"
     },
     {
+      title: "Coordinator – Alpha Productions",
+      period: "2024–2025",
+      description: "Coordinating production activities and team management",
+      icon: "🎨"
+    },
+    {
+      title: "Media Head – Aarohan",
+      period: "2024 & 2025",
+      description: "Overseeing media strategy for major college events",
+      icon: "📺"
+    },
+    {
       title: "Mentor – ISMP, IIT Ropar",
-      period: "2023–Present",
+      period: "2024–2025",
       description: "Guiding students in their academic and career journey",
       icon: "🎓"
     }

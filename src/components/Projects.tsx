@@ -9,8 +9,8 @@ const Projects = () => {
     {
       title: "BOSA Portal",
       subtitle: "SaaS product to digitize sports equipment management at IIT Ropar",
-      tech: "React, Tailwind, Firebase, Vercel",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+      tech: "SaaS project, Innovation, data-driven solution",
+      image: "/lovable-uploads/2518d214-f819-46db-b782-89d87ae014f9.png",
       link: "https://www.canva.com/design/DAGrA4v85uk/jODT92J0tMkpfokJUesewQ/view?utm_content=DAGrA4v85uk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcf067ea897",
       gradient: "from-blue-500 to-purple-600"
     },
@@ -23,10 +23,10 @@ const Projects = () => {
       gradient: "from-green-500 to-teal-600"
     },
     {
-      title: "Streamstreak Elevate",
+      title: "Streamstreak Elevate - A mock edtech startup",
       subtitle: "AI-powered upskilling platform with GTM strategy, personas, and positioning",
       tech: "AI/ML, EdTech, Go-to-Market Strategy",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
       link: "https://www.canva.com/design/DAGqWsIwly4/brLLlAHz5DZURA49V-2qfw/view?utm_content=DAGqWsIwly4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4d47c59b34#1",
       gradient: "from-purple-500 to-pink-600"
     }

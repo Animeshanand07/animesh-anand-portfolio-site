@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Download } from 'lucide-react';
+import { Download, Mail, Linkedin, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -90,42 +90,51 @@ const Contact = () => {
             <Card className="p-8">
               <h3 className="text-2xl font-bold mb-6 text-foreground">Contact Information</h3>
               <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-foreground">📧 Email</h4>
-                  <a href="mailto:2023ceb1024@iitrpr.ac.in" className="text-primary hover:underline">
-                    2023ceb1024@iitrpr.ac.in
-                  </a>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Email</h4>
+                    <a href="mailto:2023ceb1024@iitrpr.ac.in" className="text-primary hover:underline">
+                      2023ceb1024@iitrpr.ac.in
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-foreground">🔗 LinkedIn</h4>
-                  <a 
-                    href="https://linkedin.com/in/animesh-anand-iitrpr" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    linkedin.com/in/animesh-anand-iitrpr
-                  </a>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground">📸 Instagram</h4>
-                  <div className="space-y-1">
+                <div className="flex items-center space-x-3">
+                  <Linkedin className="h-5 w-5 text-primary" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">LinkedIn</h4>
                     <a 
-                      href="https://instagram.com/animesh_anand_official" 
+                      href="https://linkedin.com/in/animesh-anand-iitrpr" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="block text-primary hover:underline"
+                      className="text-primary hover:underline"
                     >
-                      @animesh_anand_official
+                      linkedin.com/in/animesh-anand-iitrpr
                     </a>
-                    <a 
-                      href="https://instagram.com/animesh.tales" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block text-primary hover:underline"
-                    >
-                      @animesh.tales
-                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Instagram className="h-5 w-5 text-primary" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Instagram</h4>
+                    <div className="space-y-1">
+                      <a 
+                        href="https://instagram.com/animesh_anand_official" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block text-primary hover:underline"
+                      >
+                        @animesh_anand_official
+                      </a>
+                      <a 
+                        href="https://instagram.com/animesh.tales" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block text-primary hover:underline"
+                      >
+                        @animesh.tales
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

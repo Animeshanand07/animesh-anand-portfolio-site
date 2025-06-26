@@ -13,7 +13,7 @@ const Skills = () => {
     {
       title: "📊 Product & Analytics",
       icon: "📈",
-      skills: ["User Persona Creation", "Agile & Waterfall", "Business Model Canvas", "Research & Analysis"],
+      skills: ["Problem Solving", "A/B Testing", "User Persona Creation", "Agile & Waterfall", "Business Model Canvas", "Research & Analysis", "Stakeholder Management"],
       color: "from-secondary to-green-600"
     }
   ];
