@@ -44,13 +44,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden card-hover group">
               <div className="relative h-48 overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-80`}></div>
                 <img 
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20"></div>
               </div>
               
               <div className="p-6">

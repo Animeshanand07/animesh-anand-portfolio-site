@@ -15,7 +15,7 @@ const Services = () => {
       title: "Video Editing",
       description: "30+ content pieces created for creators and startups (reels, promos, explainers)",
       icon: "🎥",
-      features: ["Social Media Content", "Brand Videos", "Explainer Videos", "Event Coverage"],
+      features: ["Social Media Content", "Brand Videos", "Explainer Videos"],
       gradient: "from-secondary to-green-600"
     }
   ];

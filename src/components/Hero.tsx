@@ -41,14 +41,14 @@ const Hero = () => {
           
           <div className="flex-1 flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 animate-float">
+              <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 animate-float">
                 <img 
                   src="/lovable-uploads/bf67c1f6-886e-495f-91c0-969a36eac84b.png"
                   alt="Animesh Anand"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-3xl bg-primary/10"></div>
+              <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-full bg-primary/10"></div>
             </div>
           </div>
         </div>
