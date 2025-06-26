@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 rounded-2xl overflow-hidden">
+              <div className="w-85 h-85 rounded-2xl overflow-hidden">
                 <img 
                   src="/lovable-uploads/bf67c1f6-886e-495f-91c0-969a36eac84b.png"
                   alt="Animesh Anand"
