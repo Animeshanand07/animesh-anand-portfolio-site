@@ -150,7 +150,7 @@ const Contact = () => {
                 className="bg-white text-primary hover:bg-white/90"
               >
                 <a
-                  href="https://drive.google.com/file/d/1yuPR2f-IBya93gKcfu9FRiUlSSABcxl-/view?usp=drive_link"
+                  href="https://drive.google.com/drive/folders/1GhT7gIMCUsEM5dMpPvAXG3QS-OraKTT4?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
