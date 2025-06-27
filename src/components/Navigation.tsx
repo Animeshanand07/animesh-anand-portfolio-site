@@ -63,7 +63,7 @@ const Navigation = () => {
               Contact
             </button>
             <a
-              href="https://drive.google.com/file/d/1yuPR2f-IBya93gKcfu9FRiUlSSABcxl-/view?usp=drive_link"
+              href="https://drive.google.com/drive/folders/1GhT7gIMCUsEM5dMpPvAXG3QS-OraKTT4?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex text-2xl items-center space-x-2 text-foreground hover:text-primary transition-colors"
