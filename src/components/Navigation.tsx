@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Download, Menu, X } from 'lucide-react';
+import { Moon, Sun, Download, Menu, X, ExternalLink } from 'lucide-react';
 
 const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
@@ -44,28 +44,28 @@ const Navigation = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-36 ml-12">
+          <div className="hidden md:flex items-center space-x-8 ml-16">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-foreground text-2xl hover:text-primary transition-colors"
+              className="text-foreground text-lg hover:text-primary transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground text-2xl hover:text-primary transition-colors"
+              className="text-foreground text-lg hover:text-primary transition-colors"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-foreground text-2xl hover:text-primary transition-colors"
+              className="text-foreground text-lg hover:text-primary transition-colors"
             >
               Projects
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground text-2xl hover:text-primary transition-colors"
+              className="text-foreground text-lg hover:text-primary transition-colors"
             >
               Contact
             </button>
@@ -73,10 +73,19 @@ const Navigation = () => {
               href="https://drive.google.com/drive/folders/1GhT7gIMCUsEM5dMpPvAXG3QS-OraKTT4?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex text-2xl items-center space-x-2 text-foreground hover:text-primary transition-colors"
+              className="flex text-lg items-center space-x-2 text-foreground hover:text-primary transition-colors"
             >
               <Download size={16} />
               <span>Resume</span>
+            </a>
+            <a
+              href="https://animeshtales.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex text-lg items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
+            >
+              <ExternalLink size={16} />
+              <span>Freelance</span>
             </a>
           </div>
 
@@ -138,6 +147,16 @@ const Navigation = () => {
               >
                 <Download size={16} />
                 <span>Resume</span>
+              </a>
+              <a
+                href="https://animeshtales.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex text-lg items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 w-fit"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <ExternalLink size={16} />
+                <span>Freelance</span>
               </a>
             </div>
           </div>

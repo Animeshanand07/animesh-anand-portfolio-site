@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -81,6 +81,26 @@ const Projects = () => {
               </div>
             </Card>
           ))}
+        </div>
+
+        {/* Freelance Portfolio Button */}
+        <div className="text-center mt-16">
+          <Button 
+            asChild
+            size="lg"
+            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+          >
+            <a 
+              href="https://animeshtales.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <ExternalLink className="h-5 w-5 group-hover:scale-110 transition-transform" />
+              View My Freelance Portfolio
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
