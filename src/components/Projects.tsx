@@ -29,6 +29,14 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
       link: "https://www.canva.com/design/DAGqWsIwly4/brLLlAHz5DZURA49V-2qfw/view?utm_content=DAGqWsIwly4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4d47c59b34#1",
       gradient: "from-purple-500 to-pink-600"
+    },
+    {
+      title: "Consumer Behavior Analysis",
+      subtitle: "Research study on digital consumption patterns and user preferences",
+      tech: "Market Research, Data Analysis, Consumer Insights",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      link: "https://www.canva.com/design/DAGrvsAsbzY/GgvRPt-hQuiZRI0zf1bLtQ/view?utm_content=DAGrvsAsbzY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9139ad878d",
+      gradient: "from-orange-500 to-red-600"
     }
   ];
 
@@ -40,7 +48,7 @@ const Projects = () => {
           <p className="text-xl text-muted-foreground">A showcase of my recent work and case studies</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden card-hover group">
               <div className="relative h-48 overflow-hidden">

@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Download } from 'lucide-react';
+import { Moon, Sun, Download, Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +26,11 @@ const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMobileMenuOpen(false); // Close mobile menu after clicking
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -37,6 +43,7 @@ const Navigation = () => {
             Animesh Anand
           </div>
           
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-36 ml-12">
             <button 
               onClick={() => scrollToSection('home')}
@@ -73,15 +80,68 @@ const Navigation = () => {
             </a>
           </div>
 
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleTheme}
-            className="ml-4"
-          >
-            {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </Button>
+          {/* Mobile Menu Button and Theme Toggle */}
+          <div className="flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+            >
+              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleMobileMenu}
+              className="md:hidden"
+            >
+              {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </Button>
+          </div>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-border">
+            <div className="flex flex-col space-y-4 pt-4">
+              <button 
+                onClick={() => scrollToSection('home')}
+                className="text-foreground text-lg hover:text-primary transition-colors text-left"
+              >
+                Home
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-foreground text-lg hover:text-primary transition-colors text-left"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('projects')}
+                className="text-foreground text-lg hover:text-primary transition-colors text-left"
+              >
+                Projects
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="text-foreground text-lg hover:text-primary transition-colors text-left"
+              >
+                Contact
+              </button>
+              <a
+                href="https://drive.google.com/drive/folders/1GhT7gIMCUsEM5dMpPvAXG3QS-OraKTT4?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex text-lg items-center space-x-2 text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Download size={16} />
+                <span>Resume</span>
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
