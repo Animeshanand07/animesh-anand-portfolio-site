@@ -31,10 +31,10 @@ const Projects = () => {
       gradient: "from-purple-500 to-pink-600"
     },
     {
-      title: "Consumer Behavior Analysis",
+      title: "Product Revival Strategy",
       subtitle: "Research study on digital consumption patterns and user preferences",
       tech: "Market Research, Data Analysis, Consumer Insights",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/1.png",
       link: "https://www.canva.com/design/DAGrvsAsbzY/GgvRPt-hQuiZRI0zf1bLtQ/view?utm_content=DAGrvsAsbzY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9139ad878d",
       gradient: "from-orange-500 to-red-600"
     }
