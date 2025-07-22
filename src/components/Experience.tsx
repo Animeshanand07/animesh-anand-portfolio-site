@@ -11,6 +11,12 @@ const Experience = () => {
       icon: "🎬"
     },
     {
+      title: "Vice President – E-Cell, IIT ROPAR",
+      period: "2025–Present",
+      description: "Driving innovation and entrepreneurship through strategic initiatives and team leadership",
+      icon: "🎭"
+    }
+    {
       title: "Secretary – Alpha Productions",
       period: "2025–Present",
       description: "Leading production teams and managing creative projects",
