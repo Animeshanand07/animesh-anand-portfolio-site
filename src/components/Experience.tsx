@@ -5,23 +5,16 @@ import { Card } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      title: "Freelance Video Editor & Strategist",
-      period: "2022–Present",
-      description: "Creating compelling video content for creators and brands",
-      icon: "🎬"
-    },
-    {
-      title: "dgf Video Editor & Strategist",
-      period: "2022–Present",
-      description: "Creating compelling video content for creators and brands",
-      icon: "🎬"
-    },
-
-    {
       title: "Vice President – E-Cell, IIT ROPAR",
       period: "2025–Present",
       description: "Driving innovation and entrepreneurship through strategic initiatives and team leadership",
       icon: "🚀"
+    },
+    {
+      title: "Freelance Video Editor & Strategist",
+      period: "2022–Present",
+      description: "Creating compelling video content for creators and brands",
+      icon: "🎬"
     },
     {
       title: "Secretary – Alpha Productions",
