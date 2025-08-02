@@ -22,7 +22,7 @@ const Experience = () => {
       period: "2025–Present",
       description: "Driving innovation and entrepreneurship through strategic initiatives and team leadership",
       icon: "🚀"
-    }
+    },
     {
       title: "Secretary – Alpha Productions",
       period: "2025–Present",
